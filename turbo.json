@@ -9,6 +9,7 @@
       "dependsOn": ["^build"],
       "outputs": [".cache/tsbuildinfo.json", "dist/**"]
     },
+    "@acme/db#migrate:dev": {},
     "vercel-build": {
       "dependsOn": [
         "@acme/db#generate",

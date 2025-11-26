@@ -12,6 +12,7 @@
     "test": "vitest",
     "clean": "git clean -xdf node_modules",
     "clean:workspaces": "turbo run clean",
+    "db:migrate": "turbo -F @acme/db migrate:dev",
     "db:push": "turbo -F @acme/db push",
     "db:studio": "turbo -F @acme/db studio",
     "dev": "turbo watch dev --continue",
