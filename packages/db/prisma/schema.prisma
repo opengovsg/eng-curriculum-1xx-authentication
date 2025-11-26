@@ -1,0 +1,39 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider        = "prisma-client"
+  output          = "../src/generated"
+  previewFeatures = ["fullTextSearchPostgres"]
+  engineType      = "client"
+}
+
+// TODO: Add an `Account` model. 
+// This model represents any authentication account linked to the same user, so that
+// a user can sign in to the same user with multiple providers (e.g., email, okta, etc).
+// The model should have fields for:
+// - id: string (cuid, primary key)
+// - provider: string representing the auth provider (e.g., "email", "okta")
+// - providerAccountId: string representing the account ID from the provider itself
+// - userId: string (foreign key to User model)
+
+model User {
+  id    String  @id @default(cuid())
+  name  String?
+  email String  @unique
+  image String?
+
+  // There should be a link to an `Account` model here
+  // accounts Account[]
+}
+
+// TODO: Add a `VerificationToken` model. This model is used for _email_ authentication tokens.
+// The model should have fields for:
+// - identifier: string (primary key, represents the email address)
+// - token: string (the actual verification token)
+// - attempts: int (number of attempts made to use this token, default to 0)
