@@ -32,7 +32,7 @@
     "prettier": "catalog:",
     "turbo": "^2.6.1",
     "typescript": "catalog:",
-    "vitest": "^4.0.8"
+    "vitest": "^4.1.0"
   },
   "prettier": "@acme/prettier-config"
 }
