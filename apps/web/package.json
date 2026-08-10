@@ -33,7 +33,7 @@
     "email-addresses": "^5.0.0",
     "iron-session": "^8.0.4",
     "lodash-es": "^4.17.21",
-    "nanoid": "^5.1.6",
+    "nanoid": "^5.1.16",
     "next": "16.0.7",
     "nextjs-toploader": "^3.9.17",
     "nuqs": "^2.7.3",
