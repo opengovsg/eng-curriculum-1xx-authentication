@@ -12,7 +12,7 @@ catalog:
   react-aria-components: 1.13.0
   react-hook-form: ^7.66.0
   typescript: ^5.9.3
-  zod: ^4.1.12
+  zod: ^4.6.7
 
 catalogs:
   oui:
@@ -103,6 +103,7 @@ overrides:
   vite@>=7.0.0 <=7.3.4: '^7.3.5'
   ws@>=8.0.0 <8.20.1: '^8.21.0'
   yaml@>=2.0.0 <2.8.3: '^2.8.3'
+  zod@>=4.0.0 <4.6.6: '^4.6.7'
 
 publicHoistPattern:
   - '*prettier*'
